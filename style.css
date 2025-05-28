@@ -1,0 +1,185 @@
+
+/*config basica*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/*fonte do body*/
+body {
+      font-family: Arial, sans-serif;
+    }
+
+    /*esses ai é de organiza os trem*/
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+/* Logo */
+
+    .logo img {
+  height: 50px; /* altura do logo no note */
+  width: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px; /* logo menor no celular */
+  }
+}
+
+.icons a { /*icones*/
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+   font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+
+.icons a:hover {
+  color: #ff3366; /*dps lembrar de trocar a cor dos trem*/
+}
+
+
+/*sistema de test para tell*/
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+  .header-icons {
+    font-size: 16px;
+    gap: 15px;
+  }
+  .banner img {
+    max-height: 150px; /* se n der ruim e sucesso*/
+  }
+} 
+
+/* Menu principal */
+    nav ul.menu {
+     display: flex;
+     list-style: none;
+     gap: 25px;
+   }
+
+   nav ul.menu li {
+     position: relative; /*lembrar de n mecher*/
+   }
+
+   nav ul.menu li a {
+     text-decoration: none;
+     color: #000000;
+     font-weight: 600;
+     font-size: 1rem;
+     padding: 8px 12px;
+     display: inline-block;
+     transition: color 0.5s ease;
+   }
+
+   nav ul.menu li a:hover {
+     color: #ff3366;/*lembrar de trocar de cor*/
+   }
+
+   /*Submenu*/
+   ul.submenu {
+     position: absolute;
+     top: 100%; 
+     left: 0;
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+     list-style: none;
+     padding: 10px 0;
+     min-width: 150px;
+     display: none;
+     border-radius: 4px;
+     z-index: 1000;
+   }
+
+   /*isso é o de passar se passar o mouse */
+   li.dropdown:hover > ul.submenu {
+     display: block;
+   }
+       
+   .produtos { /*titulo*/
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.gradeprod {  /*as grade de produto*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.produto {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.preço { /*o sistema de preço*/
+  color: #dd1f1f;
+  font-weight: bold;
+  margin: 5px 0 15px;
+}
+
+.carrin { /*e os trem de compra*/
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carrin:hover {
+  background-color: #e52e5c;
+}

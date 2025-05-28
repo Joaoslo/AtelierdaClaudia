@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<!-- arquivo.html é nosso documento (DOM - no qul podemos manipular) -->
+    <head> 
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Letter</title>
+
+        <!-- Minha página de estilo css -->
+        <link rel="stylesheet" href="cadastro.css">
+
+        <!-- É possível estilizar com o CSS aqui no arquivo HTML, neste
+        espaço da tag HEAD-->
+    </head>
+
+    <body>
+        <!-- Card principal da aplicação-->
+        <main class="card">
+
+            <div class="card-left">
+
+                <h1> Seu mentor online! </h2>
+                <p>
+                    Aqui escrevemos código inteligentes e semânticos. Páginas 
+                    acessíveis para maquinas e pessoas
+                </p>
+
+                <ul class="checklist">
+
+                    <!-- Começo da lista-->
+                    <li>
+                        <img src="./imagens/check-icon.svg" alt="check-image" class="check-image">
+
+                        Aulas gratuitas
+                    </li>
+
+                    <li>
+                        <img src="./imagens/check-icon.svg" alt="check-image" class="check-image">
+                        
+                        Aulas gravada ao vivo
+                    </li>
+
+                    <li>
+
+                        <img src="./imagens/check-icon.svg" alt="check-image" class="check-image">
+
+                        Aulas gameficadas
+                    </li>
+                    <!-- Fim da lista-->
+
+                </ul>
+
+                <input type="email" id="emailInput" onsubmit="return teste_email()" placeholder="Digite seu e-mail">
+                <button type="submit" id="submitButton">Enviar</button>
+
+            </div>
+
+            <div class="card-right"></div>
+
+        </main>
+
+        <div class="alert" id="alert" ></div>
+
+        <script src="cadastro.js"></script>
+
+        <!-- JavaScript também pode ser colocado aqui neste espaço-->
+    </body>
+</html>
