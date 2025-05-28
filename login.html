@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Atelier da Cláudia</title>
+    <link rel="icon" href="image/Logo transparente.png" type="image/png">
+    
+</head>
+
+<body>
+ <header>
+    <div class="logo"> 
+        <a href="index.html">
+         <img src="image/Logo transparente.png" alt="Logo da loja">
+        </a>
+ </header>
+        
+        <nav>
+            <section>
+                <!-- Card principal da aplicação-->
+                <main class="card">
+
+                    <div class="card-left">
+
+                        <h1> Acesse com seu login ou cadastre-se </h1>
+
+                        <form onsubmit="return nome()">
+                            <input type="name" id="nameiput" placeholder="Digite seu nome de usuario" required>
+                        </form>
+
+                        <form onsubmit="return email()">
+                            <input type="email" id="emailInput" placeholder="Digite seu e-mail" required>
+                            <button type="submit" id="submitButton">Entrar</button>
+                        </form>
+
+                    </div>
+
+
+                </main>
+
+            <div class="alert" id="alert" ></div>
+
+            <script src="conta.js"></script>
+
+            </section>
+        </nav>
+ 
+</body>
