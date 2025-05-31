@@ -1,0 +1,190 @@
+/*config basica*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/*fonte do body*/
+body {
+    font-family: Arial, sans-serif;
+    }
+
+    /*esses ai é de organiza os trem*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #201f1f;
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    z-index: 9999;        
+    box-shadow: 0 1px 3px rgba(22, 22, 22, 0.3);
+    }
+
+/* Logo */
+
+    .logo img {
+  height: 80px; /* altura do logo no note */
+  width: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px; /* logo menor no celular */
+  }
+}
+
+.icons a { /*icones*/
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+   font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+
+.icons a:hover {
+  color: #ff3366; /*dps lembrar de trocar a cor dos trem*/
+}
+
+
+/*sistema de test para tell*/
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+  .header-icons {
+    font-size: 16px;
+    gap: 15px;
+  }
+  .banner img {
+    max-height: 150px; /* se n der ruim e sucesso*/
+  }
+} 
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 800;
+}
+
+
+.card { /*card principal*/
+    background-color: white;/*trocar de cor*/
+    color: #000;
+    border-radius: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: 25rem;
+}
+ 
+p {
+    margin: 1rem 0 2rem 0;
+    color: #333;
+}
+
+input[type="name"],
+input[type="email"] { /*O trem de colocar o nome e email*/
+    margin: 20px 0;
+    margin-left: 11rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 8px;
+    border-radius: 0;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="name"]:focus,
+input[type="email"]:focus {
+    border-bottom-color: #000000;/*trocar de cor*/
+}
+
+button {  /* os botao*/
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.login{
+    background-color: #0f0f0f;/*trocar de cor*/
+    color: white;
+    margin-left: 15rem;
+}
+
+.cadastro{
+    background-color: transparent;/*trocar de cor*/
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    margin-left: 10.9rem;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 0px;   
+    outline: none; 
+    width: 196px;
+
+}
+
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    display: none;
+}
+
+.alert-success {
+    background-color: green;/*trocar de cor*/
+}
+
+.alert-error {
+    background-color: red;/*trocar de cor*/
+}
+
+@media(max-width: 600px){ /* telefone */
+
+    body {
+        height: auto;
+        align-items: start;
+    }
+
+    .card{
+        margin: 20%;
+        flex-direction: column;
+    }
+
+}
+
+h6 {
+  margin-left: 18rem;
+  margin-bottom: 1rem;
+}
