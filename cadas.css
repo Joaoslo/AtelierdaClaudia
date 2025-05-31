@@ -77,31 +77,19 @@ header {
   }
 } 
 
-h1 {
-    font-size: 2rem;
-    color: #333;
-    font-weight: 800;
-}
-
-
 .card { /*card principal*/
-    background-color: white;/*trocar de cor*/
+    background-color: rgb(255, 255, 255);/*trocar de cor*/
     color: #000;
     border-radius: 0.9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10rem;
-    margin-left: 25rem;
+
 }
  
-p {
-    margin: 1rem 0 2rem 0;
-    color: #333;
-}
-
-input[type="name"],
-input[type="email"] { /*O trem de colocar o nome e email*/
+input[type="nome"], input[type="email"], input[type="sobrenome"],
+input[type="senha"], input[type=consenha] { /*O trem de colocar o nome e email*/
     margin: 20px 0;
     margin-left: 11rem;
     padding: 10px;
@@ -115,8 +103,9 @@ input[type="email"] { /*O trem de colocar o nome e email*/
     transition: border-color 0.3s ease;
 }
 
-input[type="name"]:focus,
-input[type="email"]:focus {
+input[type="nome"]:focus, input[type="email"]:focus 
+input[type="sobrenome"]:focus, input[type="senha"]:focus
+input[type="consenha"]:focus{
     border-bottom-color: #000000;/*trocar de cor*/
 }
 
@@ -131,13 +120,7 @@ button {  /* os botao*/
     align-items: center;      
 }
 
-.login{
-    background-color: #0f0f0f;/*trocar de cor*/
-    color: white;
-    margin-left: 15rem;
-}
-
-.cadastro{
+.cadastrar{
     background-color: transparent;/*trocar de cor*/
     color: rgb(0, 0, 0);
     margin: 20px 0;
@@ -182,9 +165,4 @@ button {  /* os botao*/
         flex-direction: column;
     }
 
-}
-
-h6 {
-  margin-left: 18rem;
-  margin-bottom: 1rem;
 }

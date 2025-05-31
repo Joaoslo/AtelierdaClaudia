@@ -23,7 +23,7 @@
                 <!-- Card principal da aplicação-->
                 <main class="card">
 
-                    <div class="card-left">
+                    <div>
 
                         <h1> Acesse com seu login ou cadastre-se </h1>
 
@@ -32,10 +32,14 @@
                         </form>
 
                         <form onsubmit="return email()">
+                            
                             <input type="email" id="emailInput" placeholder="Digite seu e-mail" required>
-                            <button type="submit" id="submitButton">Entrar</button>
+                            <a href="semsenha.html"><h6>Esqueceu a senha?</h6></a>
+                            <button class="login" type="submit" id="submitButton">Entrar</button>
                         </form>
-
+                        <section class="cadastro">
+                            <button onclick="window.location.href='cadas.html'">Quero criar minha conta</button>
+                        </section>
                     </div>
 
 
@@ -43,9 +47,12 @@
 
             <div class="alert" id="alert" ></div>
 
-            <script src="conta.js"></script>
+            <script src="login.js"></script>
 
             </section>
         </nav>
+<footer>
+    
+</footer>
  
 </body>
