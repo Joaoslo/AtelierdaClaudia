@@ -100,12 +100,14 @@ input[type="senha"], input[type=consenha] { /*O trem de colocar o nome e email*/
     border-bottom: 2px solid #ccc;
     outline: none;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.6s ease;
 }
 
-input[type="nome"]:focus, input[type="email"]:focus 
-input[type="sobrenome"]:focus, input[type="senha"]:focus
-input[type="consenha"]:focus{
+input[type="nome"]:focus, 
+input[type="email"]:focus, 
+input[type="sobrenome"]:focus,
+input[type="senha"]:focus,
+input[type="consenha"]:focus {
     border-bottom-color: #000000;/*trocar de cor*/
 }
 

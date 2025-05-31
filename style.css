@@ -11,13 +11,14 @@ body {
     }
 
     /*esses ai é de organiza os trem*/
+    
 header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #ddd;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ffffff;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -26,7 +27,7 @@ header {
 /* Logo */
 
     .logo img {
-  height: 50px; /* altura do logo no note */
+  height: 70px; /* altura do logo no note */
   width: auto;
   cursor: pointer;
   object-fit: contain;
@@ -38,14 +39,21 @@ header {
   }
 }
 
+.icons {
+  display: flex;            /* Isso faz os ícones ficarem lado a lado */
+  align-items: center;      /* Alinha verticalmente, se necessário */
+  gap: 5px;                /* Espaço entre os ícones */
+  margin-left: 30px;        /* Distância do menu ou de outros elementos */
+}
+
 .icons a { /*icones*/
   display: flex;
   font-size: 20px;
   cursor: pointer;
   color: #333;
   user-select: none;
-   font-size: 20px;
-  margin-left: 20px;
+  font-size: 20px;
+  margin-left: 18px;
   text-decoration: none;
   color: #333;
   cursor: pointer;
@@ -57,6 +65,21 @@ header {
   color: #ff3366; /*dps lembrar de trocar a cor dos trem*/
 }
 
+.login {
+  appearance: none;
+  border: none;
+  background-color: #000000;/*trocar de cor*/
+  color: white;
+  padding: 10px;
+  margin-left: 7px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;  
+  align-items: center;    
+}
 
 /*sistema de test para tell*/
 @media (max-width: 600px) {
@@ -77,6 +100,7 @@ header {
 
 /* Menu principal */
     nav ul.menu {
+    background-color: #F5F5F5;
      display: flex;
      list-style: none;
      gap: 25px;
@@ -97,16 +121,17 @@ header {
    }
 
    nav ul.menu li a:hover {
-     color: #ff3366;/*lembrar de trocar de cor*/
+     color: #FFC947;/*lembrar de trocar de cor*/
    }
+   
 
    /*Submenu*/
    ul.submenu {
      position: absolute;
      top: 100%; 
      left: 0;
-     background-color: #fff;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+     background-color: #F5F5F5;
+     box-shadow: 0 4px 8px #FF6F61;
      list-style: none;
      padding: 10px 0;
      min-width: 150px;
@@ -122,14 +147,14 @@ header {
        
    .produtos { /*titulo*/
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 
 .produtos h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #4A4A4A;
 }
 
 .gradeprod {  /*as grade de produto*/
@@ -143,7 +168,7 @@ header {
   border-radius: 8px;
   padding: 15px;
   transition: transform 0.3s ease;
-  background-color: #f9f9f9;
+  background-color: #F5F5F5;
 }
 
 .produto:hover {
@@ -154,6 +179,7 @@ header {
 .produto img {
   width: 100%;
   height: 200px;
+  cursor: pointer;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -182,4 +208,58 @@ header {
 
 .carrin:hover {
   background-color: #e52e5c;
+}
+
+footer {
+  background-color: #F5F5F5;
+  color: white;
+  padding: 30px 20px 15px;
+  margin-top: 60px;
+}
+
+.conj {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.site {
+  position: absolute;
+  left: 20px;
+}
+
+.site img {
+  height: 110px;      
+  object-fit: contain;
+}
+
+.direçoes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.direçoes a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+.direçoes a:hover {
+  color: #FF6F61; 
+}
+
+.copy p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #000000
 }
