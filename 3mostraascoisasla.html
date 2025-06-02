@@ -1,0 +1,17 @@
+<?php
+require 'listar_produtos.php';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    <ul>
+        <?php foreach ($produtos as $produto): ?>
+            <li><?= htmlspecialchars($produto['nome']) ?> - R$ <?= number_format($produto['preco'], 2, ',', '.') ?></li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
