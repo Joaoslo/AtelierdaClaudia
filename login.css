@@ -79,6 +79,7 @@ header {
 
 h1 {
     font-size: 2rem;
+    margin-left: -3rem;
     color: #333;
     font-weight: 800;
 }
@@ -103,7 +104,7 @@ p {
 input[type="name"],
 input[type="email"] { /*O trem de colocar o nome e email*/
     margin: 20px 0;
-    margin-left: 11rem;
+    margin-left: 10rem;
     padding: 10px;
     border: 1px solid #ccc;
     border: none;
