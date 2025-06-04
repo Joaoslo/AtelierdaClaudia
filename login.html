@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Atelier da Cláudia</title>
+    <link rel="icon" href="image/Logo transparente.png" type="image/png">
+    
+</head>
+
+<body>
+ <header>
+    <div class="logo"> 
+        <a href="index.html">
+         <img src="image/Logo transparente.png" alt="Logo da loja">
+        </a>
+    </div>
+ </header>
+        
+                <main class="card">
+
+                    <div>
+
+                        <h1> Acesse com seu login ou cadastre-se </h1>
+
+                    <form id="loginForm">
+                        <input type="text" id="nameinput" placeholder="Digite seu Usuário" required>
+                        <input type="password" id="senhaInput" placeholder="Digite sua senha" required>
+                        <a href="semsenha.html"><h6>Esqueceu a senha?</h6></a>
+                        <button class="login" type="submit" id="submitButton">Entrar</button>
+                    </form>
+
+                    <section class="cadastro">
+                        <button onclick="window.location.href='cadas.html'">Quero criar minha conta</button>
+                    </section>
+
+                    <div class="alert" id="alert"></div>
+
+
+                </main>
+
+
+            <script src="login.js"></script>
+
+<footer>
+    
+</footer>
+ 
+</body>

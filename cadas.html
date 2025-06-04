@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadas.css">
+    <title>Atelier da Cláudia</title>
+    <link rel="icon" href="image/Logo transparente.png" type="image/png">
+    
+</head>
+
+<body>
+ <header>
+    <div class="logo"> 
+        <a href="index.html">
+         <img src="image/Logo transparente.png" alt="Logo da loja">
+        </a>
+ </header>
+
+ <nav>
+
+    <section>
+        <main class="card">
+            <div>
+                <form action="salvar_cliente.php"  method="post" onsubmit="return nome(), sobrenome(), email(), senha(), consenha()">
+                    <input type="nome" id="nomecainput" placeholder="Digite seu nome" required>
+                    <input type="sobrenome" id="sobnomeinput" placeholder="Digite seu sobrenome" required>
+                    <input type="email" id="emailinput" placeholder="Digite seu email" required>
+                    <input type="senha" id="senhacainput" placeholder="Digite sua senha" required>
+                    <input type="consenha" id="consenhainput" placeholder="Confirme sua senha" required>
+                    <button class="cadastrar" type="submit" id="criacadas">Criar Cadastro</button>
+                </form>
+                <!--Colocar cpf, celuar e data de nasci-->
+
+            <div class="alert" id="alert" ></div>
+
+            <script src="cadas.js"></script>
+
+
+            </div>
+        </main>
+    </section>
+
+ </nav>
+
+</body>
+</html>

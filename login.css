@@ -1,0 +1,234 @@
+/*config basica*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/*fonte do body*/
+body {
+    font-family: Arial, sans-serif;
+    }
+
+    /*esses ai é de organiza os trem*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #201f1f;
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    z-index: 9999;        
+    box-shadow: 0 1px 3px rgba(22, 22, 22, 0.3);
+    }
+
+/* Logo */
+
+    .logo img {
+  height: 80px; /* altura do logo no note */
+  width: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px; /* logo menor no celular */
+  }
+}
+
+.icons a { /*icones*/
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+   font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+
+.icons a:hover {
+  color: #ff3366; /*dps lembrar de trocar a cor dos trem*/
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    margin-left: -3rem;
+    color: #333;
+    font-weight: 800;
+}
+
+
+.card { /*card principal*/
+  background-color: white;
+  color: #000;
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column; /* <- ESSENCIAL */
+  align-items: center;
+  gap: 1rem; /* espaço entre os elementos */
+  padding: 2rem;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  max-width: 90%;
+}
+ 
+p {
+    margin: 1rem 0 2rem 0;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] { /*O trem de colocar o nome e email*/
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="passaword"]:focus {
+    border-bottom-color: #000000;/*trocar de cor*/
+}
+
+button {  /* os botao*/
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.login{
+    background-color: #0f0f0f;/*trocar de cor*/
+    color: white;
+    margin-left: 15rem;
+}
+
+.cadastro{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    margin-left: 10.9rem;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 0px;   
+    outline: none; 
+    width: 190px;
+
+}
+
+h6 {
+  margin-left: 18rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    display: none;
+}
+
+.alert-success {
+    background-color: green;/*trocar de cor*/
+}
+
+.alert-error {
+    background-color: red;/*trocar de cor*/
+}
+
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px; /* espaço pro header fixo */
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: 0;
+  }
+
+  .login {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .cadastro {
+    margin-left: 0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  h6 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .alert {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    top: 10px;
+    width: 90%;
+  }
+
+  header {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+}
