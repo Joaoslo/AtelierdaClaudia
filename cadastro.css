@@ -1,0 +1,270 @@
+/*config basica*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/*fonte do body*/
+body {
+    font-family: Arial, sans-serif;
+    }
+
+    /*esses ai é de organiza os trem*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #201f1f;
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    z-index: 9999;        
+    box-shadow: 0 1px 3px rgba(22, 22, 22, 0.3);
+    }
+
+/* Logo */
+
+    .logo img {
+  height: 80px; /* altura do logo no note */
+  width: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px; /* logo menor no celular */
+  }
+}
+
+.icons a { /*icones*/
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+   font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+
+.icons a:hover {
+  color: #ff3366; /*dps lembrar de trocar a cor dos trem*/
+}
+
+
+/*sistema de test para tell*/
+@media (max-width: 600px) {
+  .logo img {
+    height: 35px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+  .header-icons {
+    font-size: 16px;
+    gap: 15px;
+  }
+  .banner img {
+    max-height: 150px; /* se n der ruim e sucesso*/
+  }
+} 
+
+.card { /*card principal*/
+    background-color: rgb(255, 255, 255);/*trocar de cor*/
+    color: #000;
+    margin-top: 10rem;
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 400px;
+    margin: 8rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+input[type="text1"]{
+    margin: 20px 0;
+    transition: border-color 0.6s ease;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 150px;
+    outline: none;
+}
+
+input[type="text2"]{
+    margin: 20px 0;
+    transition: border-color 0.6s ease;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 180px;
+    outline: none;
+    margin-left: auto;
+}
+ 
+input[type="text3"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type=tel] { /*O trem de colocar o nome e email*/
+    margin: 20px 0;
+    transition: border-color 0.6s ease;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    outline: none;
+}
+
+
+
+input[type="text1"]:focus, 
+input[type="text2"]:focus
+input[type="text3"]:focus,
+input[type="email"]:focus, 
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+    border-bottom-color: #000000;/*trocar de cor*/
+}
+
+button {  /* os botao*/
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.cadastrar{
+    background-color: transparent;/*trocar de cor*/
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    margin-left: 4.5rem;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 0px;   
+    outline: none; 
+    width: 196px;
+}
+
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    display: none;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+.alert-error {
+    background-color: red;
+}
+
+@media(max-width: 600px){ /* telefone */
+  .card {
+    margin: 3rem 1rem;
+    padding: 30px 20px;
+}
+}
+
+footer {
+  background-color: #E6CFC3;
+  padding: 30px 20px 15px;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.conj {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.site {
+  position: absolute;
+  left: 20px;
+}
+
+.site img {
+  height: 110px;      
+  object-fit: contain;
+}
+
+.direçoes {
+  display: flex;
+  font-size: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.direçoes a {
+  text-decoration: none;
+}
+
+.copy p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.contato{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contato{
+  height: 40px;      
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.suportes{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+}
