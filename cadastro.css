@@ -92,7 +92,7 @@ header {
 
 }
 
-input[type="text1"]{
+.nomecainput { 
     margin: 20px 0;
     transition: border-color 0.6s ease;
     padding: 10px;
@@ -105,7 +105,7 @@ input[type="text1"]{
     outline: none;
 }
 
-input[type="text2"]{
+input[type="text"]{
     margin: 20px 0;
     transition: border-color 0.6s ease;
     justify-content: space-between;
@@ -120,7 +120,7 @@ input[type="text2"]{
     margin-left: auto;
 }
  
-input[type="text3"],
+input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="number"],
@@ -140,9 +140,9 @@ input[type=tel] { /*O trem de colocar o nome e email*/
 
 
 
-input[type="text1"]:focus, 
-input[type="text2"]:focus
-input[type="text3"]:focus,
+input[type="text"]:focus, 
+input[type="text"]:focus
+input[type="text"]:focus,
 input[type="email"]:focus, 
 input[type="password"]:focus,
 input[type="number"]:focus,

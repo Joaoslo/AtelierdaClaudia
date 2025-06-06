@@ -4,7 +4,7 @@ const nameinput = document.getElementById("nameinput");
 const senhaInput = document.getElementById("senhaInput");
 const alertBox = document.getElementById("alert");
 
-submitButton.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const name = nameinput.value.trim();
