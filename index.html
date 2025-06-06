@@ -18,13 +18,11 @@
         </a>
     </div>
 
-      
-
      <div class="icons"> 
       
       <div class="container">
         <span class="lupa" onclick="toggleSearch()">🔍</span>
-        <input type="text" class="achar" placeholder="pesquisar...">
+        <input type="text" class="achar" placeholder="pesquisar..." id="searchInput">
       </div>
 
       <a href="#carrinho" title="Carrinho" aria-label="Sacola de compra">🛍️</a>
@@ -44,14 +42,17 @@
       <li class="dropdown">
         <a href="">Outlet</a>
         <ul class="submenu">
+
           <a><strong>Roupas</strong></a>
           <li><a href="#Blusas">Blusas</a></li>
           <li><a href="#Calças">Calças</a></li>
-          <li><a href="#Short">Short</a></li>
-          <li><a href="#Blusas de Frio">Blusas de Frio</a></li>
-          <li><a href="#Roupa Intima">Roupa Intima</a></li>
-          <li><a href="#Calçola">Calçola</a></li>
-          <li><a href="#Pijama">Pijama</a></li>
+          <li><a href="#Saias">Saias</a></li>
+          <li><a href="#Vestidos">Vestidos</a></li>
+          <li><a href="#Macação">Macação</a></li>
+          <li><a href="#Calçados">Calçados</a></li>
+          <li><a href="#Roupa Íntima">Roupa Íntima</a></li>
+          <li><a href="#Pijamas">Pijamas</a></li>
+          <li><a href="#Camisetas">Camisetas</a></li>
         </ul>
       </li>
     </ul>
@@ -65,253 +66,274 @@
 
     <div class="produto">
       <img src="image/roupas/cima/Camisola.jpeg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Camisola</h3>
+      <p class="preço">50R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/cima/camisola 2.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Camisola</h3>
+      <p class="preço">50R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/cima/camisola 3.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Camisola</h3>
+      <p class="preço">50R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
         
       <div class="produto">
       <img src="image/roupas/baixo/saia 1.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Saia Branca</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/baixo/saia 2.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Saia de luxo</h3>
+      <p class="preço">129.37R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/baixo/saia 3.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Saia Preta</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/pros 2/vestido saia branco.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido de Alça com Bolinhas</h3>
+      <p class="preço">289R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/pros 2/vestido saia preto.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido com Manga Longa Bufante</h3>
+      <p class="preço">120R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/pros 2/vestido saia.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido da Barbie</h3>
+      <p class="preço">150R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/vestido/vestido branco.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido Tomara que Caia</h3>
+      <p class="preço">120R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/vestido/vestido preto.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido Tomara que Caia</h3>
+      <p class="preço">120R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/vestido/vestido verde.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Vestido com alça</h3>
+      <p class="preço">120R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/cima/sutia 1.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Sutiã</h3>
+      <p class="20R$">sla</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/cima/sutia 2.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Conjunto de Sutiã(2)</h3>
+      <p class="preço">40R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/cima/kit sutia.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Conjunto de Sutiã com Bojo(3)</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(37, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/baixo/calcinha de renda.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Calcinha de Renda</h3>
+      <p class="preço">20R$</p>
+      <button onclick="adicionarAoCarrinho(39, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
       <div class="produto">
       <img src="image/roupas/baixo/calcinha multipla.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Kit Calcinha com Desenho(6)</h3>
+      <p class="preço">50R$</p>
+      <button onclick="adicionarAoCarrinho(38, this)" class="carrin">Adicionar ao carrinho</button>
       </div>
-
-      
+     
+      <div class="produto">
       <div class="produto">
       <img src="image/roupas/baixo/calcinha 6.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Kit Calcinha(12)</h3>
+      <p class="preço">100R$</p>
+      <button onclick="adicionarAoCarrinho(44, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/sapato/tenis 1.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Tênis com listras e cadarço</h3>
+      <p class="preço">90R$</p>
+      <button onclick="adicionarAoCarrinho(33, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/sapato/tenis 2.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Sapatênis</h3>
+      <p class="preço">50R$</p>
+      <button onclick="adicionarAoCarrinho(32, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/sapato/tenis nike falso.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Tênis Largo</h3>
+      <p class="preço">78.90R$</p>
+      <button onclick="adicionarAoCarrinho(31, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/pros 2/pijama hello kitty.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Conjunto Pijama Hello Kitty</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(40, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/pros 2/pijama rosa.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Conjunto Pijama Rosa</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(42, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
       <img src="image/roupas/pros 2/pijama ovelha.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <h3>Conjunto Pijama Ovelha</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(43, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/vestido/vestido branco.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/baixo/mini saia 1.jpg" alt="">
+      <h3>Mini Saia Preta</h3>
+      <p class="preço">70R$</p>
+      <button onclick="adicionarAoCarrinho(18, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/vestido/vestido verde.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/baixo/mini saia 2.jpg" alt="">
+      <h3>Mini Saia Branca</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(17, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/vestido/vestido preto.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/baixo/mini saia 3.jpg" alt="">
+      <h3>Mini Saia Vermelha</h3>
+      <p class="preço">60R$</p>
+      <button onclick="adicionarAoCarrinho(16, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/cima/" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/cima/blusa 1.jpeg" alt="">
+      <h3>Camiseta com Manga Longa</h3>
+      <p class="preço">49.60R$</p>
+      <button onclick="adicionarAoCarrinho(4, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/cima/blusa 2.jpeg" alt="">
+      <h3>Camiseta com Borboleta</h3>
+      <p class="preço">39.90R$</p>
+      <button onclick="adicionarAoCarrinho(1, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/cima/blusa 3.jpeg" alt="">
+      <h3>Camiseta Its okay not to be perfect</h3>
+      <p class="preço">39R$</p>
+      <button onclick="adicionarAoCarrinho(3, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/cima/blusa 4.jpeg" alt="">
+      <h3>Camiseta de Cogumelo</h3>
+      <p class="preço">45R$</p>
+      <button onclick="adicionarAoCarrinho(2, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/cima/kit sutia.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/baixo/calça jeans 1.jpeg" alt="">
+      <h3>Calça Jeans wide leg</h3>
+      <p class="preço">120R$</p>
+      <button onclick="adicionarAoCarrinho(9, this)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
     
       <div class="produto">
-      <img src="image/roupas/cima/kit sutia.jpg" alt="">
-      <h3>produto nome</h3>
-      <p class="preço">sla</p>
-      <button onclick="window.location.href=''" class="carrin">Adicionar ao carrinho</button>
+      <img src="image/roupas/baixo/calça jeans 2.jpeg" alt="">
+      <h3>Calça Jeans Skini</h3>
+      <p class="preço">80R$</p>
+      <button onclick="adicionarAoCarrinho(8, this)" class="carrin">Adicionar ao carrinho</button>
+    </div>
+
+          <div class="produto">
+      <img src="image/roupas/baixo/calça jeans 3.jpeg" alt="">
+      <h3>Calça Jeans Rasgada</h3>
+      <p class="preço">118.79R$</p>
+      <button onclick="adicionarAoCarrinho(7, event)" class="carrin">Adicionar ao carrinho</button>
     </div>
 
   </div>
 </section>
+
+<div id="carrinhoPopup" style="display:none;">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Item adicionado ao carrinho!</h3>
+        <p id="popupMessage"></p>
+        <div class="popup-buttons">
+            <button onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+            <button onclick="fecharPopup()">Continuar Comprando</button>
+        </div>
+    </div>
+</div>
+
+<script src="carrinho.js"></script>
 
 <footer>
   <div class="conj">

@@ -120,14 +120,14 @@ button {  /* os botao*/
 .login{
     background-color: #0f0f0f;/*trocar de cor*/
     color: white;
-    margin-left: 15rem;
+    margin-left: 9rem;
 }
 
 .cadastro{
     background-color: transparent;
     color: rgb(0, 0, 0);
     margin: 20px 0;
-    margin-left: 10.9rem;
+    margin-left: 5rem;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 0px;   
@@ -231,4 +231,72 @@ h6 {
   .logo img {
     height: 35px;
   }
+}
+
+footer {
+  background-color: #E6CFC3;
+  padding: 30px 20px 15px;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.conj {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.site {
+  position: absolute;
+  left: 20px;
+}
+
+.site img {
+  height: 110px;      
+  object-fit: contain;
+}
+
+.direçoes {
+  display: flex;
+  font-size: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.direçoes a {
+  text-decoration: none;
+}
+
+.copy p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.contato{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contato{
+  height: 40px;      
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.suportes{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
 }

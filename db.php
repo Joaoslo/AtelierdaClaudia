@@ -9,7 +9,7 @@ try {
     
     // Configura para retornar arrays associativos por padrão
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    
+     
 } catch (PDOException $e) {
     // Em caso de erro na conexão
     echo "Erro na conexão: " . $e->getMessage();

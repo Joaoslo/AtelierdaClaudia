@@ -1,7 +1,6 @@
 <?php
 require_once 'db.php';
 
-// Recebe os dados do formulário
 $nome = $_POST['nome'] ?? '';
 $sobrenome = $_POST['sobrenome'] ?? '';
 $username = $_POST['username'] ?? '';
@@ -11,7 +10,6 @@ $cpf = $_POST['cpf'] ?? '';
 $data_nascimento = $_POST['data_nascimento'] ?? '';
 $celular = $_POST['celular'] ?? '';
 
-// Validações básicas
 // Criar allert incorret e alert correct
 if (empty($nome) || empty($sobrenome) || empty($username) || empty($email) || empty($senha) || empty($cpf)) {
     echo json_encode(['success' => false, 'message' => 'Preencha todos os campos obrigatórios']);
@@ -22,13 +20,13 @@ if (empty($nome) || empty($sobrenome) || empty($username) || empty($email) || em
 $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
 try {
-    // Prepara a query SQL
+    // Prepara a SQL
     $stmt = $db->prepare("INSERT INTO clientes 
                          (nome, sobrenome, username, email, senha, cpf, data_nascimento, celular) 
                          VALUES 
                          (:nome, :sobrenome, :username, :email, :senha, :cpf, :data_nascimento, :celular)");
     
-    // Executa a query com os parâmetros
+
     $stmt->execute([
         ':nome' => $nome,
         ':sobrenome' => $sobrenome,
@@ -40,7 +38,7 @@ try {
         ':celular' => $celular
     ]);
     
-    // Retorna sucesso
+  
     echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);
     
 } catch (PDOException $e) {

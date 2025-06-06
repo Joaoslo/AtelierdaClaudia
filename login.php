@@ -28,11 +28,13 @@ try {
             'email' => $usuario['email']
         ];
         
+        // fazer alert correct e alert incorrect
         echo json_encode(['success' => true, 'message' => 'Login realizado com sucesso!']);
     } else {
         echo json_encode(['success' => false, 'message' => 'Username ou senha incorretos']);
     }
     
+    // fazer allert correct e alert incorrect
 } catch (PDOException $e) {
     echo json_encode(['success' => false, 'message' => 'Erro ao fazer login: ' . $e->getMessage()]);
 }

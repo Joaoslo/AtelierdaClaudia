@@ -23,22 +23,21 @@
     <section>
         <main class="card">
             <div>
-                <form action="salvar_cliente.php"  method="post" name(), name(), email(), password(), password()">
-                    <input type="text" id="nomecainput" placeholder="Digite seu nome" required>
-                    <input type="text" id="sobnomeinput" placeholder="Digite seu sobrenome" required>
-                    <input type="text" id="username" placeholder="Digite seu username" required>
-                    <input type="date" id="data_nascimento" placeholder="Data de nascimento">
-                    <input type="email" id="emailinput" placeholder="Digite seu email" required>
-                    <input type="password" id="senhacainput" placeholder="Digite sua senha" required>
-                    <input type="number" id="cpf" placeholder="Insira seu cpf" required>
-                    <input type="tel" id="celular" placeholder="Digite seu celular">
-                    <button class="cadastrar" type="submit" id="criacadas">Criar Cadastro</button>
-                </form>
-                
+              <form action="salvar_cliente.php" method="post" id="formCadastro">
+                  <input type="text" name="nome" id="nomecainput" placeholder="Digite seu nome" required>
+                  <input type="text" name="sobrenome" id="sobnomeinput" placeholder="Digite seu sobrenome" required>
+                  <input type="text" name="username" id="username" placeholder="Digite seu username" required>
+                  <input type="date" name="data_nascimento" id="data_nascimento" placeholder="Data de nascimento">
+                  <input type="email" name="email" id="emailinput" placeholder="Digite seu email" required>
+                  <input type="password" name="senha" id="senhacainput" placeholder="Digite sua senha" required>
+                  <input type="number" name="cpf" id="cpf" placeholder="Insira seu cpf" required>
+                  <input type="tel" name="celular" id="celular" placeholder="Digite seu celular">
+                  <button class="cadastrar" type="submit" id="criacadas">Criar Cadastro</button>
+              </form>
 
             <div class="alert" id="alert" ></div>
 
-            <script src="cadas.js"></script>
+            <script src="cadastro.js"></script>
 
 
             </div>
@@ -55,7 +54,7 @@
     <div class="direçoes">
       <a href="index.html" title="Inicio">🏠</a>
       <img class="contato" title="Contato" onclick="window.open('https://www.instagram.com/claudiamoreira322?igsh=ejl4OTB2dGE5Zjh4','_blank')" src="image/instagram.png" alt="img/icon" >
-      <a href="" title="Endereço">📍</a>
+      <a href="https://maps.app.goo.gl/Jz33XGXfGPcYEpRM7" target="_blank" title="Endereço">📍</a>
     </div>
   </div>
 

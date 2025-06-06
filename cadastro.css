@@ -141,7 +141,7 @@ input[type=tel] { /*O trem de colocar o nome e email*/
 
 
 input[type="text"]:focus, 
-input[type="text"]:focus
+input[type="text"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus, 
 input[type="password"]:focus,
@@ -195,11 +195,81 @@ button {  /* os botao*/
 }
 
 @media(max-width: 600px){ /* telefone */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px; /* espaço pro header fixo */
+    height: auto;
+  }
+
   .card {
-    margin: 3rem 1rem;
-    padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+input[type="text"], 
+input[type="text"],
+input[type="text"],
+input[type="email"], 
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: 0;
+  }
+
+  .login {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .cadastro {
+    margin-left: 0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  h6 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .alert {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    top: 10px;
+    width: 90%;
+  }
+
+  header {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
 }
-}
+
+
 
 footer {
   background-color: #E6CFC3;
